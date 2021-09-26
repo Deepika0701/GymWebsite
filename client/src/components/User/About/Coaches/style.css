@@ -10,8 +10,7 @@
 
 .coachcontainer{
     margin-top: 5vh;
-    font-family: 'Nunito', sans-serif;
-    font-size: 3.5vh;
+    
      
 }
 .coachesinfo{
@@ -21,6 +20,11 @@
     flex-wrap: wrap;
 }
 
+.coachabout p{
+    font-family:  'Nunito', sans-serif;
+    /* line-height: 30px; */
+    font-size: 3.5vh;
+}
 .coachinfo{
     max-width: 50vw;
     height: auto;
