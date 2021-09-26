@@ -15,8 +15,7 @@ const Header = () => {
           <nav className="main-nav">
               <div className="logo">
                   <h2> 
-                  <span>M</span>y
-                  <span>G</span>ym
+                  <span>FITNESS STUDIO</span>
                   </h2>
               </div>
               <div className={showMenu ? 'menu-link mobile-menu-link' : 'menu-link'}>
