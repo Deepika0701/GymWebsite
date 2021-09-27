@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&family=Roboto+Slab:wght@300&display=swap');
+
+.cheading{
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    color: #b66d02;
+    font-size: 5vw;
+    text-decoration:underline;
+}
+
+.coachcontainer{
+    margin-top: 5vh;
+    
+     
+}
+.coachesinfo{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.coachabout p{
+    font-family:  'Nunito', sans-serif;
+    /* line-height: 30px; */
+    font-size: 3.5vh;
+}
+.coachinfo{
+    max-width: 50vw;
+    height: auto;
+    flex: 1;
+    margin: 10px;
+    position: relative;
+    /* border: 1px solid red; */
+}
+.coachimg img{
+    max-width: 100%;
+}
+ 
+@media (max-width:1024px) {
+    .coachinfo{
+        flex: 100%;
+        max-width: 60vw;
+    }
+    .container{
+        margin-top: 60em;
+    }
+}
+ 
+ 
+ 

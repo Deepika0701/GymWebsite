@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Monospace', Times,sans-serif;
+}
+
+/* contact page  */
+
+.contact{
+
+=======
+    width: 100%;
+
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url("https://t3.ftcdn.net/jpg/01/99/46/36/360_F_199463619_ZhgnZgKLpRQLCPv7lIrx402bWKMCvdvK.jpg");
+    background-size: cover;
+
+}
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color:black
+}
+.contact .content .socialTab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+}
+.contact .content .socialTab .socialColor{
+    color: black;
+}
+.contact .content .socialTab .socialColor:hover{
+    color:orange;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .contactInfo{
+width: 50%;
+display: flex;
+flex-direction: column;
+
+}
+.container .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    transition: 2s;
+    
+}
+.container .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: rgba(250, 218, 90, 0.747);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+    
+}
+.container .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 20px;
+    color: orange;
+    flex-direction: column;
+    font-weight: 300;
+}
+.container .contactInfo .box .text h3{
+    font-weight: 600;
+    font-size: 15px;
+    color: rgb(212, 114, 21);
+    
+}
+.contactForm{
+    width: 40%;
+    padding: 40px;
+    background: white ;
+}
+.contactForm h2{
+    font-size: 30px;
+    color: orange;
+    font-weight: 700;
+}
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: orange;
+    border-bottom: 2px solid orange;
+    outline: none;
+}
+.contactForm .inputBox label{
+    margin: 2px;
+    color: #808080;
+}
+.contactForm .inputBox input[type="submit"]
+{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+.contactForm select{
+   margin: 4px;
+        appearance: none;
+        outline: 0;
+        background:white;
+        
+        width: 200px;
+        height: 30px;
+        color: black;
+        cursor: pointer;
+        border:1px solid black;
+        padding: 4px;
+        font-size: 15px;
+        
+    
+}
+
+@media(max-width:991px){
+    .contact{
+padding: 50px;
+    }
+    .container{
+flex-direction: column;
+    }
+    .container .contactInfo{
+        margin-bottom: 40px;
+    }
+
+}

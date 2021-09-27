@@ -1,36 +1,37 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import {IconButton} from '@material-ui/core'
-import {GiHamburgerMenu} from 'react-icons/gi'
+import { IconButton } from '@material-ui/core'
+import { FiMenu } from 'react-icons/fi'
 import './style.css'
 
 const Header = () => {
     const [showMenu, setshowMenu] = useState(false)
 
-    const menu=()=>{
+    const menu = () => {
         setshowMenu(!showMenu)
     }
     return (
-         <>
-          <nav className="main-nav">
-              <div className="logo">
-                  <h2> 
-                  <span>M</span>y
-                  <span>G</span>ym
-                  </h2>
-              </div>
-              <div className={showMenu ? 'menu-link mobile-menu-link' : 'menu-link'}>
-                  <ul> 
-                  <li><Link to="/">About</Link></li>
-                  <li><Link to="/">Programs</Link></li>
-                  <li><Link to="/">Subscriptions</Link></li>
-                  <li><Link to="/">Schedule</Link></li>
-                  <li><Link to="/contact">Contact</Link></li>
-                  </ul>
-              </div>
-               
-          </nav>
-         </>
+        <>
+            <section className="header">
+                <nav >
+
+                    <Link to="/">FITNESS STUDIO</Link>
+                    <div className={showMenu ? 'menu-link mobile-menu-link' : 'menu-link'}>
+                        <div className="nav-links" id="nav-links">
+                       < FiMenu/>
+                            <ul>
+                                <li><Link to="/">ABOUT</Link></li>
+                                <li><Link to="/">PROGRAMS</Link></li>
+                                <li><Link to="/">SUBSCRIPTIONS</Link></li>
+                                <li><Link to="/">SCHEDULE</Link></li>
+                                <li><Link to="/contact">CONTACT</Link></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </nav>
+            </section>
+        </>
     )
 }
 

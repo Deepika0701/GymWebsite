@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&family=Roboto+Slab:wght@300&display=swap');
+
+.footer{
+    width: 100%;
+    height: auto;
+    width: 100%;
+    display: flex;
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    background-color: rgb(70, 70, 70);
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bold;
+    flex-wrap: wrap;
+}
+.info{
+    height: auto;
+    position: relative;
+    flex: 1 1 300px;
+    margin: 3vh;
+}
+.divcenter{
+    font-size: 40px;
+    text-align: center;
+}
+/* @media (max-width:800px){
+ .divcenter{
+     align-self: flex-start;
+ }   
+} */
