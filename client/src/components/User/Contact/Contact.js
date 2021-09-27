@@ -1,13 +1,20 @@
+
+import React from 'react'
+=======
 import React,{useState} from 'react'
+
 import './style.css'
 import { SiGooglemaps } from 'react-icons/si'
 import { BiPhone } from 'react-icons/bi'
 import { GiCoinsPile } from 'react-icons/gi'
 import { AiOutlineMail,AiFillInstagram,AiFillFacebook,AiFillLinkedin,AiFillTwitterCircle} from 'react-icons/ai'
 import emailjs from "emailjs-com"
+
+=======
 import {Button} from '@material-ui/core'
 import {ToastContainer,toast} from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+
 
 const initialState={
     user_name:"",
@@ -28,6 +35,11 @@ const Contact = () => {
         e.target,
         'user_Vi2c3oQ1nq2BAoqskMpm3').then(res=>{
             console.log(res);
+
+        }).catch(err=>GiCoinsPile.log(err));
+    }
+
+=======
         }).catch((err)=>
         {
             
@@ -52,6 +64,7 @@ const Contact = () => {
     }
 
    
+
     return (
         <section className="contact">
             <div className="content">
@@ -99,6 +112,20 @@ const Contact = () => {
                 <h2>Send Message</h2>
                 <form onSubmit={sendEmail}>
                     <div className="inputBox">
+
+                        <input type="text" name="user_name" required="required" placeholder="Name"  />
+                    </div>
+
+                    <div className="inputBox">
+                        <input type="text" name="user_email" required="required" placeholder="Email" />
+                    </div>
+
+                    <div className="inputBox">
+                        <input type="text" name="user_phone" required="required" placeholder="Phone" />
+                    </div>
+                    <div className="inputBox">
+                        <label for="programs"><b>Please select which program interest you:</b></label><br />
+=======
                         <input type="text" name="user_name" required={true} placeholder="Name" value={contactData.user_name}  onChange={change} />
                     </div>
 
@@ -111,6 +138,7 @@ const Contact = () => {
                     </div>
                     <div className="inputBox">
                         <label htmlFor="programs"><b>Please select which program interest you:</b></label><br />
+
                         <select name="programs" id="programs">
                             <option value="program1">program1</option>
                             <option value="program2">program2</option>
@@ -120,15 +148,23 @@ const Contact = () => {
                         </select>
                     </div>
                     <div className="inputBox">
+
+                        <textarea name="message"  placeholder="Type your message..."></textarea>
+                    </div>
+=======
                         <textarea name="message"  placeholder="Type your message..." value={contactData.message} onChange={change}></textarea>
                     </div>
+
 
                     <div className="inputBox">
                         <input type="submit"  value="SUBMIT" />
                     </div>
                 </form>
 
+
+
                     <ToastContainer/>
+
             </div>
             </div>
 
@@ -139,4 +175,6 @@ const Contact = () => {
     )
 }
 
+
 export default Contact;
+
